@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* variables de css: para declarar paleta de colores del sitio */
+:root {
+    --oscuro: #021024;
+    --azul: #052659;
+    --celesteOscuro: #5483B3;
+    --celesteMedio: #7DA0CA;
+    --celesteClaro: #C1E8FF;
+}
+
+/*baja de google fonts la tipografia */
+@font-face {
+    font-family:"Tektur";
+    src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Quicksand";
+    src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Para bajar el footer */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+/* ---------------------- */
+
+/* Definicion Tipografía */
+.fontFamilyMarca{
+    font-family: "Tektur", sans-serif;
+}
+.fontFamilyTextos {
+    font-family: "Quicksand", sans-serif;
+}
+/* -------------------------- */
