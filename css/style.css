@@ -46,3 +46,6 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+.BGnavbar{
+    background: var(--oscuro);
+}
