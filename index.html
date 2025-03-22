@@ -20,7 +20,7 @@
     <header>
       <nav class="navbar navbar-expand-lg BGnavbar p-3">
         <div class="container-fluid">
-          <a class="navbar-brand text-light fontFamilyMarca fs-2" href="./index.html">Rollingshoes</a>
+          <a class="navbar-brand text-light fontFamilyMarca marcadepagina" href="./index.html">Rollingshoes</a>
           <button
             class="navbar-toggler bg-light"
             type="button"
@@ -34,18 +34,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active text-light fs-5" aria-current="page" href="./index.html">Inicio</a>
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#">Acerca de nosotros</a>
+              <li class="nav-item d-flex align-items-center text-center">
+                <a class="nav-link text-light" href="#">Acerca de nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-light fs-5" href="#">Contacto</a>
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link text-light " href="#">Contacto</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown d-flex align-items-center">
                 <a
-                  class="nav-link dropdown-toggle text-light fs-5"
+                  class="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -53,7 +53,7 @@
                 >
                   Categorias
                 </a>
-                <ul class="dropdown-menu border border-dark">
+                <ul class="dropdown-menu border border-dark bg-light">
                   <li><a class="dropdown-item listadenav" href="#">Zapatilla de hombre</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item listadenav" href="#">Zapatilla de mujer</a></li>
@@ -67,8 +67,10 @@
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="¿Que buscas?"
                 aria-label="Search"
+                minlength="5"
+                maxlength="30"
               />
               <button class="btn border border-light btn-outline-primary me-5 text-light" type="submit">
                 Buscar
@@ -77,11 +79,11 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn border border-light text-light btn-outline-primary px-5"
+              class="btn border border-light text-light btn-outline-primary "
               data-bs-toggle="modal"
               data-bs-target="#loginModal"
             >
-              Login
+              Ingresar
             </button>
             <!-- Modal -->
             <div

@@ -49,11 +49,24 @@ main {
 .BGnavbar{
     background: var(--oscuro);
 }
-.listadenav:hover{
-color: rgb(0, 0, 253);
-font-size: 20px;
-font-weight: 600;
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
 }
-.listadenav{
-    transition: 500ms;
+.titulosNav{
+    font-size: 20px;
+}
+.listadenav:hover{
+    color: rgb(0, 0, 253);
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .listadenav{
+        transition: 500ms;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
 }
