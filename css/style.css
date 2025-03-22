@@ -78,6 +78,17 @@ main {
     color: var(--celesteClaro);
 }
 
+/* GRILLA DE CATEGORIAS */
+.bodyCardDetalleCategoria{
+    background-color: var(--celesteOscuro);
+}
+
+.imgCardDetalleCategoria{
+    object-fit: contain;
+    width: auto;
+    height: 250px;
+}
+
 
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
 /* 💻 Estilos para tablets */
