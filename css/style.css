@@ -46,3 +46,50 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+
+
+/* PAGINA DETALLE DE CATEGORIAS */
+
+.contenedorVideoDetalleCategoria {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.videoDetalleCategoria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayVideoDetalleCategoria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: var(--celesteClaro); */
+    /* color: var(--azul); */
+    /* color: var(--celesteMedio); */
+    color: var(--celesteOscuro);
+}
+
+
+/* MEDIAS QUERIES DETALLE CATEGORIAS */
+/* 💻 Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedorVideoDetalleCategoria {
+        height: 350px;
+    }    
+}
+
+/* 🖥️ Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .contenedorVideoDetalleCategoria {
+        height: 400px;
+    }    
+}
