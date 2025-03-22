@@ -72,10 +72,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* color: var(--celesteClaro); */
+    font-weight: 600;
+    font-style: bold;
+    color: var(--celesteClaro);
     /* color: var(--azul); */
     /* color: var(--celesteMedio); */
-    color: var(--celesteOscuro);
+    /* color: var(--celesteOscuro); */
 }
 
 
