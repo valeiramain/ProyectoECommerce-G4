@@ -95,7 +95,10 @@ main {
 @media (min-width: 769px) and (max-width: 1024px) {
     .contenedorVideoDetalleCategoria {
         height: 350px;
-    }    
+    } 
+    .imgCardDetalleCategoria{
+        height: 200px;
+    }   
 }
 
 /* 🖥️ Estilos para pantallas grandes */
