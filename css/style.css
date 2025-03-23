@@ -46,3 +46,11 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+footer{
+    background-color: #021024;
+}
+.logotipo{
+    width: 70px;
+    height: 70px;
+    
+}
