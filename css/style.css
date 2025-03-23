@@ -54,3 +54,20 @@ footer{
     height: 70px;
     
 }
+
+@media all and (max-width: 767px){
+    .footersepardor{
+        border-bottom: white solid 1px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .footersepardor{
+        border-right: white solid 1px;
+    }
+}
+
+@media all and (min-width: 993px){
+.footersepardor{
+    border-right: white solid 1px;
+}
+}
