@@ -46,6 +46,7 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+
 footer{
     background-color: #021024;
 }
@@ -53,6 +54,23 @@ footer{
     width: 70px;
     height: 70px;
     
+}
+
+.BGnavbar{
+    background: var(--oscuro);
+}
+
+.titulosNav{
+    font-size: 20px;
+}
+.listadenav:hover{
+    color: rgb(0, 0, 253);
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .listadenav{
+        transition: 500ms;
+    }
 }
 
 @media all and (max-width: 767px){
@@ -70,4 +88,13 @@ footer{
 .footersepardor{
     border-right: white solid 1px;
 }
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
 }
