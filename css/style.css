@@ -31,6 +31,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Quicksand"
 }
 
 main {
@@ -40,12 +41,67 @@ main {
 
 /* Definicion Tipografía */
 .fontFamilyMarca{
-    font-family: "Tektur", sans-serif;
+    font-family: "Tektur";
 }
 .fontFamilyTextos {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand";
 }
 /* -------------------------- */
+
+/* PAGINA DETALLE DE CATEGORIAS */
+
+.contenedorVideoDetalleCategoria {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.videoDetalleCategoria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayVideoDetalleCategoria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-style: bold;
+    color: var(--celesteClaro);
+}
+
+.overlayVideoDetalleCategoriaKids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-style: bold;
+    color: var(--celesteOscuro);
+    /* color: var(--azul) */
+}
+
+/* GRILLA DE CATEGORIAS */
+.bodyCardDetalleCategoria{
+    background-color: var(--celesteOscuro);
+}
+
+.imgCardDetalleCategoria{
+    object-fit: contain;
+    width: auto;
+    height: 250px;
+}
 
 footer{
     background-color: #021024;
@@ -98,3 +154,21 @@ footer{
 @media screen and (min-width: 768px) and (max-width: 992px){
 
 }
+  /* MEDIAS QUERIES DETALLE CATEGORIAS */
+/* 💻 Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedorVideoDetalleCategoria {
+        height: 350px;
+    } 
+    .imgCardDetalleCategoria{
+        height: 200px;
+    }   
+}
+
+/* 🖥️ Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .contenedorVideoDetalleCategoria {
+        height: 400px;
+    }    
+}
+
