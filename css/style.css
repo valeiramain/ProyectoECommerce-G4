@@ -215,6 +215,12 @@ footer{
     text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.822)
 }
 
+
+.tercerBannerTitulo {
+    text-shadow: 2px 2px 8px rgba(74, 84, 195, 0.7), 5px 5px 20px rgba(234, 41, 200, 0.7);
+}
+
+
 .bannerTexto {
     font-size: 0.6rem;
     text-align: center;
@@ -230,6 +236,10 @@ footer{
 
 .pantallaNegra{
     background-color: #00000037;
+}
+
+.zapatillaConEnvio{
+    object-position: center bottom;
 }
 
 @media (min-width: 768px) {
