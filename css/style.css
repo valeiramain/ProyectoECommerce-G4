@@ -127,6 +127,9 @@ footer{
     .listadenav{
         transition: 500ms;
     }
+    .modalregistro:hover{
+        font-weight: 600;
+    }
 }
 
 @media all and (max-width: 767px){
