@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Quicksand"
+    font-family: "Quicksand";
 }
 
 main {
@@ -102,6 +102,28 @@ main {
     object-fit: contain;
     width: auto;
     height: 250px;
+}
+
+
+/* PAGINA DETALLE PRODUCTO */
+/* .selectProducto-color {
+    background-color: var(--celesteOscuro) !important;
+    color: white;
+    border: 1px solid #6c757d; 
+} */
+
+.btnAgregarCarrito{
+    background-color: var(--celesteOscuro);
+    color: white;
+}
+
+.imgCircularComentarios {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    filter: brightness(1.0);
+    /* filter: grayscale(65%); */
+    transition: 400ms;
 }
 
 
