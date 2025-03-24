@@ -66,6 +66,9 @@ main {
     .listadenav{
         transition: 500ms;
     }
+    .modalregistro:hover{
+        font-weight: 600;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
 
