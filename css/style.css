@@ -46,15 +46,20 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+
+footer{
+    background-color: #021024;
+}
+.logotipo{
+    width: 70px;
+    height: 70px;
+    
+}
+
 .BGnavbar{
     background: var(--oscuro);
 }
 
-
-@media all and (min-width: 993px){
-.marcadepagina{
-    font-size: 35px;
-}
 .titulosNav{
     font-size: 20px;
 }
@@ -67,6 +72,29 @@ main {
         transition: 500ms;
     }
 }
+
+@media all and (max-width: 767px){
+    .footersepardor{
+        border-bottom: white solid 1px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .footersepardor{
+        border-right: white solid 1px;
+    }
+}
+
+@media all and (min-width: 993px){
+.footersepardor{
+    border-right: white solid 1px;
+}
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px){
 
 }
