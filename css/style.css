@@ -117,14 +117,28 @@ main {
     color: white;
 }
 
-.imgCircularComentarios {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    filter: brightness(1.0);
-    /* filter: grayscale(65%); */
-    transition: 400ms;
+
+/* comentarios */
+.comment-box {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(176, 32, 32, 0.1);
 }
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment-content {
+    background: #f0f2f5;
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
 
 
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
