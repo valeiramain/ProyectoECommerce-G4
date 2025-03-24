@@ -209,6 +209,12 @@ footer{
     font-size: 1.8rem;
 }
 
+.segundoBannerTitulo{
+    font-size: 1rem;
+    color: var(--celesteClaro);
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.822)
+}
+
 .bannerTexto {
     font-size: 0.6rem;
     text-align: center;
@@ -218,10 +224,20 @@ footer{
     margin-left: 15%;
 }
 
+.carousel-item video {
+    object-position: center bottom; /* Muestra más la parte inferior */
+}
+
+.pantallaNegra{
+    background-color: #00000037;
+}
 
 @media (min-width: 768px) {
     .containerPrincipal {
         height: 400px;
+    }
+    .segundoBannerTitulo{
+        font-size: 1.5rem;
     }
     .bannerTitulo {
         font-size: 2.5rem;
