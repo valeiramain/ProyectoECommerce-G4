@@ -113,6 +113,14 @@ main {
 
 /* comentarios */
 
+.contenedorCargaComentarios {
+    background: #5194d7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color:var(--azul);
+}
+
 .contenedorComentarios {
     background: #f8f9fa;
     padding: 10px;
