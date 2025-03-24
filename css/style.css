@@ -46,3 +46,27 @@ main {
     font-family: "Quicksand", sans-serif;
 }
 /* -------------------------- */
+.BGnavbar{
+    background: var(--oscuro);
+}
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
+}
+.titulosNav{
+    font-size: 20px;
+}
+.listadenav:hover{
+    color: rgb(0, 0, 253);
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .listadenav{
+        transition: 500ms;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
