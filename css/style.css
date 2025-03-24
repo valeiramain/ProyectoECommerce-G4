@@ -48,7 +48,6 @@ main {
 }
 /* -------------------------- */
 
-
 /* PAGINA DETALLE DE CATEGORIAS */
 
 .contenedorVideoDetalleCategoria {
@@ -104,8 +103,58 @@ main {
     height: 250px;
 }
 
+footer{
+    background-color: #021024;
+}
+.logotipo{
+    width: 70px;
+    height: 70px;
+    
+}
 
-/* MEDIAS QUERIES DETALLE CATEGORIAS */
+.BGnavbar{
+    background: var(--oscuro);
+}
+
+.titulosNav{
+    font-size: 20px;
+}
+.listadenav:hover{
+    color: rgb(0, 0, 253);
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .listadenav{
+        transition: 500ms;
+    }
+}
+
+@media all and (max-width: 767px){
+    .footersepardor{
+        border-bottom: white solid 1px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .footersepardor{
+        border-right: white solid 1px;
+    }
+}
+
+@media all and (min-width: 993px){
+.footersepardor{
+    border-right: white solid 1px;
+}
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+  /* MEDIAS QUERIES DETALLE CATEGORIAS */
 /* 💻 Estilos para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
     .contenedorVideoDetalleCategoria {
@@ -122,3 +171,4 @@ main {
         height: 400px;
     }    
 }
+
