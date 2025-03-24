@@ -130,7 +130,7 @@ footer{
     .modalregistro:hover{
         font-weight: 600;
     }
-}
+
 
 @media all and (max-width: 767px){
     .footersepardor{
@@ -147,11 +147,13 @@ footer{
 .footersepardor{
     border-right: white solid 1px;
 }
+}
 
 
 @media all and (min-width: 993px){
 .marcadepagina{
     font-size: 35px;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -175,3 +177,79 @@ footer{
     }    
 }
 
+/* Estilos Banner de index */
+
+.containerPrincipal {
+    height: 200px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.containerFondo {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--azul);
+    z-index: 0;
+}
+
+.containerFrente {
+    width: 50%;
+    background-color: var(--celesteOscuro);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.bannerTitulo {
+    color: var(--celesteMedio);
+    font-family: "Prompt", sans-serif;
+    font-size: 1.8rem;
+}
+
+.bannerTexto {
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.containerZapatilla{
+    margin-left: 15%;
+}
+
+
+@media (min-width: 768px) {
+    .containerPrincipal {
+        height: 400px;
+    }
+    .bannerTitulo {
+        font-size: 2.5rem;
+    }
+    .bannerTexto {
+        font-size: 1rem;
+    }
+    .sombra {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .containerPrincipal {
+        height: 600px;
+    }
+    .containerGrande{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bannerTitulo {
+        font-size: 3.5rem;
+    }
+    .bannerTexto {
+        font-size: 1.5rem;
+    }
+    .sombra {
+        max-width: 50%;
+    }
+}
