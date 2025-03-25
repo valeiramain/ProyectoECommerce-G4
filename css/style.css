@@ -49,3 +49,6 @@ main {
 .formulario{
     background: var(--azul);
 }
+.bordesformulario:hover{
+border: solid ;
+}
