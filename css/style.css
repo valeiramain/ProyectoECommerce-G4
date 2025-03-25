@@ -31,7 +31,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: "Quicksand"
+    font-family: "Quicksand";
 }
 
 main {
@@ -46,7 +46,13 @@ main {
 .fontFamilyTextos {
     font-family: "Quicksand";
 }
-/* -------------------------- */
+
+.formulario{
+    background: var(--azul);
+}
+.bordesformulario:hover{
+border: solid ;
+}
 
 /* PAGINA DETALLE DE CATEGORIAS */
 
@@ -131,51 +137,6 @@ footer{
         font-weight: 600;
     }
 
-
-@media all and (max-width: 767px){
-    .footersepardor{
-        border-bottom: white solid 1px;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .footersepardor{
-        border-right: white solid 1px;
-    }
-}
-
-@media all and (min-width: 993px){
-.footersepardor{
-    border-right: white solid 1px;
-}
-}
-
-
-@media all and (min-width: 993px){
-.marcadepagina{
-    font-size: 35px;
-}
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px){
-
-}
-  /* MEDIAS QUERIES DETALLE CATEGORIAS */
-/* 💻 Estilos para tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .contenedorVideoDetalleCategoria {
-        height: 350px;
-    } 
-    .imgCardDetalleCategoria{
-        height: 200px;
-    }   
-}
-
-/* 🖥️ Estilos para pantallas grandes */
-@media (min-width: 1025px) {
-    .contenedorVideoDetalleCategoria {
-        height: 400px;
-    }    
-}
 
 /* Estilos Banner de index */
 
@@ -279,3 +240,48 @@ footer{
         max-width: 50%;
     }
 }
+@media all and (max-width: 767px){
+    .footersepardor{
+        border-bottom: white solid 1px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .footersepardor{
+        border-right: white solid 1px;
+    }
+}
+
+@media all and (min-width: 993px){
+.footersepardor{
+    border-right: white solid 1px;
+}
+}
+
+
+@media all and (min-width: 993px){
+.marcadepagina{
+    font-size: 35px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+  /* MEDIAS QUERIES DETALLE CATEGORIAS */
+/* 💻 Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contenedorVideoDetalleCategoria {
+        height: 350px;
+    } 
+    .imgCardDetalleCategoria{
+        height: 200px;
+    }   
+}
+
+/* 🖥️ Estilos para pantallas grandes */
+@media (min-width: 1025px) {
+    .contenedorVideoDetalleCategoria {
+        height: 400px;
+    }    
+}
+

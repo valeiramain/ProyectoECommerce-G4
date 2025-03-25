@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto grupal de E-Commerce para fin de Modulo 1"
+    />
+    <meta
+      name="author"
+      content="Jose Romero - Luciana Ruiz - Estefanía Cabello - Valentina Iramain"
+    />
+    <meta name="keywwords" content="ecommerce, venta online" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Proyecto de E-Commerce</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="text-center my-3">
+        Crea tu cuenta completando el siguiente formulario
+      </h1>
+      <div class="container border border-dark-subtle p-3 rounded-2 formulario">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="Nombreyapellido" class="form-label">Nombre y apellido</label>
+            <input
+              type="text"
+              class="form-control bordesformulario"
+              id="Nombreyapellido"
+              minlength="5"
+              maxlength="40"
+              required
+              placeholder="Ej: Juan Romero"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Mail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control bordesformulario"
+              id="Mail"
+              minlength="10"
+              maxlength="40"
+              required
+              placeholder="Ej: Anonimo@gmail.com"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Contrasena" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control bordesformulario"
+              id="Contrasena"
+              minlength="8"
+              maxlength="25"
+              required
+              placeholder="Min 8 caracteres(letras,numeros,simbolos)Max 25"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="repitacontrasena" class="form-label"
+              >Repita contraseña</label
+            >
+            <input
+              type="password"
+              class="form-control bordesformulario"
+              id="repitacontrasena"
+              minlength="8"
+              maxlength="25"
+              required
+              placeholder="Min 8 caracteres(letras,numeros,simbolos)Max 25"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Provincia" class="form-label">Provincia</label>
+            <input
+              type="text"
+              class="form-control bordesformulario"
+              id="Provincia"
+              minlength="5"
+              maxlength="15"
+              required
+              placeholder="Ej: Tucuman"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="Departamento" class="form-label">Departamento</label>
+            <input
+              type="text"
+              class="form-control bordesformulario"
+              id="Departamento"
+              minlength="4"
+              maxlength="40"
+              required
+              placeholder="Ej: Leales"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="direccion" class="form-label">Direccion</label>
+            <input
+              type="text"
+              class="form-control bordesformulario"
+              id="direccion"
+              minlength="4"
+              maxlength="50"
+              required
+              placeholder="Ej: Barrio X"
+            />
+          </div>
+          <div class="col-md-2">
+            <label for="Codigoposta" class="form-label">Codigo postal</label>
+            <input
+              type="text"
+              class="form-control bordesformulario"
+              id="Codigoposta"
+              minlength="4"
+              maxlength="10"
+              required
+              placeholder="Ej: 4166"
+            />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
+                Acepto los <a href="">Terminos y condiciones</a>
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Crear</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
