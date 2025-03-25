@@ -145,6 +145,15 @@ main {
     text-decoration: underline;
 }
 
+/* DETALLE CARRITO DE COMPRAS */
+.tituloCarrito{
+    color: var(--celesteMedio);
+}
+
+.fondoCarrito{
+    background-color: var(--celesteOscuro);
+}
+
 
 
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
