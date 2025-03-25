@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyecto grupal de E-Commerce para fin de Modulo 1"
+    />
+    <meta
+      name="author"
+      content="Jose Romero - Luciana Ruiz - Valentina Iramain"
+    />
+    <meta name="keywwords" content="ecommerce, venta online" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Proyecto de E-Commerce</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg BGnavbar p-3">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-light fontFamilyMarca marcadepagina"
+            href="../index.html"
+            >Rollingshoes</a
+          >
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-flex align-items-center">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item d-flex align-items-center text-center">
+                <a class="nav-link text-light" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link text-light" href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item dropdown d-flex align-items-center">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu border border-dark bg-light">
+                  <li>
+                    <a
+                      class="dropdown-item listadenav"
+                      href="./detalleCategoriaHombres.html"
+                      >Zapatilla de hombre</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item listadenav" href="./error404.html"
+                      >Zapatilla de mujer</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item listadenav"
+                      href="./detalleCategoriaKids.html"
+                      >Zapatilla de Niño</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="¿Que buscas?"
+                aria-label="Search"
+                minlength="5"
+                maxlength="30"
+              />
+              <button
+                class="btn border border-light btn-outline-primary me-5 text-light"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </form>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn border border-light text-light btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Ingresar
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="loginModal"
+              tabindex="-1"
+              aria-labelledby="loginModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="loginModalLabel">
+                      Inicia Sesion
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="Email" class="form-label">Mail</label>
+                        <input
+                          type="email"
+                          class="form-control border border-dark"
+                          id="Email"
+                          aria-describedby="emailHelp"
+                          minlength="10"
+                          maxlength="40"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="contrasena" class="form-label"
+                          >Contraseña</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control border border-dark"
+                          id="contrasena"
+                          minlength="10"
+                          maxlength="20"
+                          required
+                        />
+                      </div>
+                      <div class="text-end">
+                        <button type="submit" class="btn btn-primary">
+                          Ingresar
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="modal-footer d-flex justify-content-center text-center"
+                  >
+                    <p>
+                      Si no tienes tu usuario y contraseña
+                      <a
+                        href="./nuevaCuenta.html"
+                        class="text-decoration-none modalregistro"
+                        >Puedes crearlo dando click aqui</a
+                      >
+                    </p>
+                    <br />
+                    <p>
+                      Si olvidaste tu usuario o contraseña
+                      <a
+                        href="./error404.html"
+                        class="text-decoration-none modalregistro"
+                        >te ayudamos a recuperarlo</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn border border-light mx-1 my-2 btn-outline-primary"
+            >
+              <a href="" class="text-light p-2"
+                ><i class="bi bi-cart-fill"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <h1 class="text-center my-4 border-bottom border-3 ">Contactate con nosotros</h1>
+        <article class="row border border-5 rounded-4 p-4">
+          <div class="col-md-6">
+            <div class="mb-3">
+                <label for="Nombreyapellido" class="form-label">Nombre y apellido</label>
+                <input type="text" class="form-control" id="Nombreyapellido" placeholder="Juan Romero">
+              </div>
+              <div class="mb-3">
+                <label for="Mail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Mail" minlength="5" maxlength="40" required placeholder="Ej: Anonimo@gmail.com">
+              </div>
+              <div class="mb-3">
+                <label for="Telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="Telefono" minlength="5" maxlength="15" required placeholder="543816667777">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Deja tu consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" minlength="2" maxlength="200" required rows="3" placeholder="Maximo 200 caracteres"></textarea>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1" >Acepto los <a href="./error404.html">terminos y condiciones</a></label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+          <div class="col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.105916739557!2d-65.207167!3d-26.836583299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1742916445742!5m2!1ses!2sar" class="w-100" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="container-fluid">
+        <article class="row">
+          <div class="col-md-4 text-center footersepardor my-3">
+            <a href="../index.html" class="text-decoration-none">
+              <img
+                src="../img/Logotipo.png"
+                alt="logo de zapatilla"
+                class="logotipo"
+              />
+              <p class="fs-2 fontFamilyMarca text-light">Rolingshoes</p>
+            </a>
+          </div>
+          <div class="col-md-4 text-center text-md-start my-3 footersepardor">
+            <h4 class="text-white">Informacion</h4>
+            <ul class="m-0 list-unstyled">
+              <li class="mb-1">
+                <a href="" class="text-decoration-none text-light"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  href="./contacto.html"
+                  class="text-decoration-none text-light"
+                  >Contacto</a
+                >
+              </li>
+              <li class="mb-1">
+                <a href="../index.html" class="text-decoration-none text-light"
+                  >Nuestros productos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center text-md-start my-3">
+            <h4 class="text-white">Contacto</h4>
+            <ul class="m-0 list-unstyled text-light">
+              <li class="mb-1">Telefono: +543815887741</li>
+              <li class="mb-1">Mail: Rollingshoes@gmail.com</li>
+              <li class="mb-1">
+                Direccion: Dirección: Gral. José María Paz 576, San Miguel de
+                Tucumán, Tucumán
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

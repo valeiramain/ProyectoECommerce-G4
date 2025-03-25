@@ -2,49 +2,49 @@
 
 /* variables de css: para declarar paleta de colores del sitio */
 :root {
-    --oscuro: #021024;
-    --azul: #052659;
-    --celesteOscuro: #5483B3;
-    --celesteMedio: #7DA0CA;
-    --celesteClaro: #C1E8FF;
+  --oscuro: #021024;
+  --azul: #052659;
+  --celesteOscuro: #5483b3;
+  --celesteMedio: #7da0ca;
+  --celesteClaro: #c1e8ff;
 }
 
 /*baja de google fonts la tipografia */
 @font-face {
-    font-family:"Tektur";
-    src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Tektur";
+  src: url(../fonts/Tektur-VariableFont_wdth\wght.ttf);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family:"Quicksand";
-    src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Quicksand";
+  src: url(../fonts/Tektur-VariableFont_wdth\wght.ttf);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Para bajar el footer */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Quicksand";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand";
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 /* ---------------------- */
 
 /* Definicion Tipografía */
-.fontFamilyMarca{
-    font-family: "Tektur";
+.fontFamilyMarca {
+  font-family: "Tektur";
 }
 .fontFamilyTextos {
-    font-family: "Quicksand";
+  font-family: "Quicksand";
 }
 
 .formulario{
@@ -57,74 +57,74 @@ border: solid ;
 /* PAGINA DETALLE DE CATEGORIAS */
 
 .contenedorVideoDetalleCategoria {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
 }
 
 .videoDetalleCategoria {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlayVideoDetalleCategoria {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-style: bold;
-    color: var(--celesteClaro);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-style: bold;
+  color: var(--celesteClaro);
 }
 
 .overlayVideoDetalleCategoriaKids {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-style: bold;
-    color: var(--celesteOscuro);
-    /* color: var(--azul) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-style: bold;
+  color: var(--celesteOscuro);
+  /* color: var(--azul) */
 }
 
 /* GRILLA DE CATEGORIAS */
-.bodyCardDetalleCategoria{
-    background-color: var(--celesteOscuro);
+.bodyCardDetalleCategoria {
+  background-color: var(--celesteOscuro);
 }
 
-.imgCardDetalleCategoria{
-    object-fit: contain;
-    width: auto;
-    height: 250px;
+.imgCardDetalleCategoria {
+  object-fit: contain;
+  width: auto;
+  height: 250px;
 }
 
-footer{
-    background-color: #021024;
+footer {
+  background-color: #021024;
 }
-.logotipo{
-    width: 70px;
-    height: 70px;
-    
-}
-
-.BGnavbar{
-    background: var(--oscuro);
+.logotipo {
+  width: 70px;
+  height: 70px;
 }
 
-.titulosNav{
-    font-size: 20px;
+.BGnavbar {
+  background: var(--oscuro);
 }
+
+.titulosNav {
+  font-size: 20px;
+}
+
 .listadenav:hover{
     color: rgb(0, 0, 253);
     font-size: 20px;
@@ -203,6 +203,11 @@ footer{
     object-position: center bottom;
 }
 
+.modalregistro:hover {
+  font-weight: 600;
+}
+
+
 @media (min-width: 768px) {
     .containerPrincipal {
         height: 400px;
@@ -245,43 +250,44 @@ footer{
         border-bottom: white solid 1px;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .footersepardor{
-        border-right: white solid 1px;
-    }
+@media all and (max-width: 767px) {
+  .footersepardor {
+    border-bottom: white solid 1px;
+  }
 }
-
-@media all and (min-width: 993px){
-.footersepardor{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .footersepardor {
     border-right: white solid 1px;
-}
+  }
 }
 
 
-@media all and (min-width: 993px){
-.marcadepagina{
+@media all and (min-width: 993px) {
+  .footersepardor {
+    border-right: white solid 1px;
+  }
+}
+
+@media all and (min-width: 993px) {
+  .marcadepagina {
     font-size: 35px;
-}
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
-
-}
-  /* MEDIAS QUERIES DETALLE CATEGORIAS */
+/* MEDIAS QUERIES DETALLE CATEGORIAS */
 /* 💻 Estilos para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .contenedorVideoDetalleCategoria {
-        height: 350px;
-    } 
-    .imgCardDetalleCategoria{
-        height: 200px;
-    }   
+  .contenedorVideoDetalleCategoria {
+    height: 350px;
+  }
+  .imgCardDetalleCategoria {
+    height: 200px;
+  }
 }
 
 /* 🖥️ Estilos para pantallas grandes */
 @media (min-width: 1025px) {
-    .contenedorVideoDetalleCategoria {
-        height: 400px;
-    }    
+  .contenedorVideoDetalleCategoria {
+    height: 400px;
+  }
 }
-
