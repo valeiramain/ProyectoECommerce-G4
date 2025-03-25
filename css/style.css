@@ -154,6 +154,11 @@ main {
     background-color: var(--celesteOscuro);
 }
 
+.imgCarrito{
+  object-fit: cover;
+  width: auto;
+  height: 300px;
+}
 
 
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
@@ -164,12 +169,19 @@ main {
     } 
     .imgCardDetalleCategoria{
         height: 200px;
-    }   
+    }
+    .imgCarrito{
+      height: 400px;
+  }
+
 }
 
 /* 🖥️ Estilos para pantallas grandes */
 @media (min-width: 1025px) {
     .contenedorVideoDetalleCategoria {
         height: 400px;
-    }    
+    }  
+    .imgCarrito{
+      height: 450px;
+  }  
 }
