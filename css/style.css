@@ -196,11 +196,117 @@ footer {
 }
 
 .pantallaNegra{
-    background-color: #00000037;
+    background-color: hwb(0 0% 100% / 0.216);
 }
 
 .zapatillaConEnvio{
     object-position: center bottom;
+}
+
+/* Estilos de la Categoría "Hombres" */
+.bordeCategorias {
+    border: 3px groove var(--oscuro);
+}
+
+.imgCategoriaHombre {
+    filter: grayscale(80%);
+    transition: filter 500ms;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.imgCategoriaHombre:hover {
+    filter: grayscale(30%);
+}
+
+.contenedorCategoria {
+    padding: 20px;
+    border: 2px solid rgba(43, 43, 43, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.contenedorCategoria:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+/* Contenedor de Zapatillas */
+.shoe-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+/* Estilos de las zapatillas */
+.shoe {
+    position: absolute;
+    width: 70px;
+    bottom: 0;
+    animation: walk 2s infinite ease-in-out;
+}
+
+.bgNegroRgba{
+  background-color: hsla(0, 4%, 9%, 0.5);
+}
+
+/* Media Queries para Tablets */
+
+@media (min-width: 768px) {
+    .shoe-container{
+        max-width: 400px;
+        height: 90px;
+    }
+    .shoe {
+        width: 100px;
+    }
+}
+
+/* Media Queries para Computadoras */
+
+@media (min-width: 992px) {
+    .shoe-container {
+        max-width: 500px;
+        height: 120px;
+    }
+    .shoe {
+        width: 120px;
+    }
+    .imgCategoriaHombre {
+        height: 400px;
+    }
+}
+
+/* Posiciones de zapatillas */
+.shoe-left {
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.shoe-right {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+/* Animación de caminar */
+@keyframes walk {
+    0% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-10px) rotate(10deg); }
+    50% { transform: translateY(0) rotate(0deg); }
+    75% { transform: translateY(-10px) rotate(-10deg); }
+    100% { transform: translateY(0) rotate(0deg); }
 }
 
 .modalregistro:hover {
