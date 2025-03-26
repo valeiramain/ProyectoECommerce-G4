@@ -208,7 +208,7 @@ footer {
     border: 3px groove var(--oscuro);
 }
 
-.imgCategoriaHombre {
+.imgCategoria {
     filter: grayscale(80%);
     transition: filter 500ms;
     max-width: 100%;
@@ -216,7 +216,7 @@ footer {
     max-height: 400px;
 }
 
-.imgCategoriaHombre:hover {
+.imgCategoria:hover {
     filter: grayscale(30%);
 }
 
@@ -255,6 +255,7 @@ footer {
     position: absolute;
     width: 70px;
     bottom: 0;
+    filter: grayscale(65%);
     animation: walk 2s infinite ease-in-out;
 }
 
