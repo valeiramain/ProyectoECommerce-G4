@@ -11,7 +11,7 @@
 
 /*baja de google fonts la tipografia */
 @font-face {
-    font-family:"Tektur";
+    font-family: "Tektur";
     src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
     font-optical-sizing: auto;
     font-weight: 400;
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family:"Quicksand";
+    font-family: "Quicksand";
     src: url(../fonts/Tektur-VariableFont_wdth\,wght.ttf);
     font-optical-sizing: auto;
     font-weight: 400;
@@ -37,15 +37,18 @@ body {
 main {
     flex-grow: 1;
 }
+
 /* ---------------------- */
 
 /* Definicion Tipografía */
-.fontFamilyMarca{
+.fontFamilyMarca {
     font-family: "Tektur";
 }
+
 .fontFamilyTextos {
     font-family: "Quicksand";
 }
+
 /* -------------------------- */
 
 
@@ -94,11 +97,11 @@ main {
 }
 
 /* GRILLA DE CATEGORIAS */
-.bodyCardDetalleCategoria{
+.bodyCardDetalleCategoria {
     background-color: var(--celesteOscuro);
 }
 
-.imgCardDetalleCategoria{
+.imgCardDetalleCategoria {
     object-fit: contain;
     width: auto;
     height: 250px;
@@ -106,7 +109,7 @@ main {
 
 
 /* PAGINA DETALLE PRODUCTO */
-.btnAgregarCarrito{
+.btnAgregarCarrito {
     background-color: var(--celesteOscuro);
     color: white;
 }
@@ -118,7 +121,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 15px;
-    color:var(--azul);
+    color: var(--azul);
 }
 
 .contenedorComentarios {
@@ -126,14 +129,16 @@ main {
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 15px;
-    color:var(--azul);
+    color: var(--azul);
 }
+
 .imgComentarios {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .linkComentarios a {
     font-size: 14px;
     margin-right: 10px;
@@ -141,24 +146,24 @@ main {
     color: #007bff;
     text-decoration: none;
 }
+
 .linkComentarios a:hover {
     text-decoration: underline;
 }
 
 /* DETALLE CARRITO DE COMPRAS */
-.tituloCarrito{
+.tituloCarrito {
     color: var(--celesteMedio);
 }
 
-.fondoCarrito{
+.fondoCarrito {
     background-color: var(--celesteOscuro);
 }
 
-.imgCarrito{
-  object-fit: cover;
-  width: auto;
-  height: 300px;
-}
+/* .imgCarrito {
+    object-fit: cover;
+    width: 100%;
+} */
 
 
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
@@ -166,13 +171,16 @@ main {
 @media (min-width: 769px) and (max-width: 1024px) {
     .contenedorVideoDetalleCategoria {
         height: 350px;
-    } 
-    .imgCardDetalleCategoria{
+    }
+
+    .imgCardDetalleCategoria {
         height: 200px;
     }
-    .imgCarrito{
-      height: 400px;
-  }
+
+    /* .imgCarrito {
+        height: 600px;
+        object-fit: cover;
+    } */
 
 }
 
@@ -180,8 +188,9 @@ main {
 @media (min-width: 1025px) {
     .contenedorVideoDetalleCategoria {
         height: 400px;
-    }  
-    .imgCarrito{
-      height: 450px;
-  }  
+    }
+
+    /* .imgCarrito {
+        height: 450px;
+    } */
 }
