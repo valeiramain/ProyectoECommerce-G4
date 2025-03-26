@@ -78,7 +78,10 @@
 
                         <!-- boton comprar -->
                         <div class="d-grid my-4">
-                            <a href="./detalleCarrito.html" class="btn btn-primary" type="button">Agregar al Carrito</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalCarrito">
+                                Agregar al Carrito
+                            </button>
                         </div>
                     </article>
                 </div>
@@ -96,13 +99,16 @@
                 <h4 class="mb-3 text-decoration-underline">Comentarios:</h4>
                 <!-- Carga de Comentario -->
                 <div class="d-flex align-items-start contenedorCargaComentarios">
-                    <img src="../img/detalleProductos/usuario6.webp" alt="foto perfil usuario" class="imgComentarios me-3 border border-1">
-                    <textarea class="form-control" id="comentario" rows="2" maxlength="200" placeholder="Escribe tu comentario aquí..."></textarea>
+                    <img src="../img/detalleProductos/usuario6.webp" alt="foto perfil usuario"
+                        class="imgComentarios me-3 border border-1">
+                    <textarea class="form-control" id="comentario" rows="2" maxlength="200"
+                        placeholder="Escribe tu comentario aquí..."></textarea>
                 </div>
-                
+
                 <!-- Comentario 1 -->
                 <div class="d-flex align-items-start contenedorComentarios">
-                    <img src="../img/detalleProductos/usuario2.webp" alt="foto perfil usuario" class="imgComentarios me-3 border border-1">
+                    <img src="../img/detalleProductos/usuario2.webp" alt="foto perfil usuario"
+                        class="imgComentarios me-3 border border-1">
                     <div>
                         <strong>Carlos López</strong>
                         <p>Compré estas zapatillas y son súper cómodas. ¡Muy recomendadas!</p>
@@ -114,7 +120,8 @@
 
                 <!-- Comentario 2 -->
                 <div class="d-flex align-items-start contenedorComentarios">
-                    <img src="../img/detalleProductos/usuario4.webp" alt="foto perfil usuario" class="imgComentarios me-3 border border-1">
+                    <img src="../img/detalleProductos/usuario4.webp" alt="foto perfil usuario"
+                        class="imgComentarios me-3 border border-1">
                     <div>
                         <strong>María Fernández</strong>
                         <p>El envío fue rapidísimo y llegaron en perfecto estado. Sin dudas volveré a comprar.</p>
@@ -126,7 +133,8 @@
 
                 <!-- Comentario 3 -->
                 <div class="d-flex align-items-start contenedorComentarios">
-                    <img src="../img/detalleProductos/usuario5.webp" alt="foto perfil usuario" class="imgComentarios me-3 border border-1">
+                    <img src="../img/detalleProductos/usuario5.webp" alt="foto perfil usuario"
+                        class="imgComentarios me-3 border border-1">
                     <div>
                         <strong>Javier Gómez</strong>
                         <p>¿Tienen más colores disponibles? Me encantaron, pero quiero en rojo.</p>
@@ -142,6 +150,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Cargar el modal desde modal_carrito.html -->
+    <script>
+        fetch('../modalCarrito.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            })
+            .catch(error => console.error('Error cargando el modal:', error));
+    </script>
+    <!-- Cargar el modal desde modal_carrito.html -->
 </body>
 
 </html>
