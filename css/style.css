@@ -160,7 +160,6 @@ main {
     background-color: var(--celesteOscuro);
 }
 
-
 /* MEDIAS QUERIES DETALLE CATEGORIAS */
 /* 💻 Estilos para tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
