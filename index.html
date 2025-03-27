@@ -56,7 +56,9 @@
                 <a class="nav-link text-light" href="">Acerca de nosotros</a>
               </li>
               <li class="nav-item d-flex align-items-center">
-                <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
+                <a class="nav-link text-light" href="./pages/contacto.html"
+                  >Contacto</a
+                >
               </li>
               <li class="nav-item dropdown d-flex align-items-center">
                 <a
@@ -70,19 +72,25 @@
                 </a>
                 <ul class="dropdown-menu border border-dark bg-light">
                   <li>
-                    <a class="dropdown-item listadenav" href="./pages/detalleCategoriaHombres.html"
+                    <a
+                      class="dropdown-item listadenav"
+                      href="./pages/detalleCategoriaHombres.html"
                       >Zapatilla de hombre</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item listadenav" href="./pages/error404.html"
+                    <a
+                      class="dropdown-item listadenav"
+                      href="./pages/error404.html"
                       >Zapatilla de mujer</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item listadenav" href="./pages/detalleCategoriaKids.html"
+                    <a
+                      class="dropdown-item listadenav"
+                      href="./pages/detalleCategoriaKids.html"
                       >Zapatilla de Niño</a
                     >
                   </li>
@@ -115,9 +123,12 @@
             >
               Ingresar
             </button>
-            
+
             <button
               class="btn border border-light mx-1 my-2 btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCarrito"
+              type="submit"
             >
               <a href="" class="text-light p-2"
                 ><i class="bi bi-cart-fill"></i
@@ -239,7 +250,11 @@
                 >
               </li>
               <li class="mb-1">
-                <a href="./pages/contacto.html" class="text-decoration-none text-light">Contacto</a>
+                <a
+                  href="./pages/contacto.html"
+                  class="text-decoration-none text-light"
+                  >Contacto</a
+                >
               </li>
               <li class="mb-1">
                 <a href="./index.html" class="text-decoration-none text-light"
@@ -264,79 +279,75 @@
     </footer>
     <!-- Modal -->
     <div
-    class="modal fade"
-    id="loginModal"
-    tabindex="-1"
-    aria-labelledby="loginModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title fs-5" id="loginModalLabel">
-            Inicia Sesion
-          </h2>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="Email" class="form-label">Mail</label>
-              <input
-                type="email"
-                class="form-control border border-dark bg-light"
-                id="Email"
-                aria-describedby="emailHelp"
-                minlength="10"
-                maxlength="40"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="contrasena" class="form-label"
-                >Contraseña</label
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="loginModalLabel">Inicia Sesion</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="Email" class="form-label">Mail</label>
+                <input
+                  type="email"
+                  class="form-control border border-dark bg-light"
+                  id="Email"
+                  aria-describedby="emailHelp"
+                  minlength="10"
+                  maxlength="40"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="contrasena" class="form-label">Contraseña</label>
+                <input
+                  type="password"
+                  class="form-control border border-dark bg-light"
+                  id="contrasena"
+                  minlength="10"
+                  maxlength="20"
+                  required
+                />
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-center text-center">
+            <p>
+              Si no tienes tu usuario y contraseña
+              <a
+                href="./pages/nuevaCuenta.html"
+                class="text-decoration-none modalregistro"
+                >Puedes crearlo dando click aqui</a
               >
-              <input
-                type="password"
-                class="form-control border border-dark bg-light"
-                id="contrasena"
-                minlength="10"
-                maxlength="20"
-                required
-              />
-            </div>
-            <div class="text-end">
-              <button type="submit" class="btn btn-primary">
-                Ingresar
-              </button>
-            </div>
-          </form>
-        </div>
-        <div
-          class="modal-footer d-flex justify-content-center text-center"
-        >
-          <p>
-            Si no tienes tu usuario y contraseña
-            <a href="./pages/nuevaCuenta.html" class="text-decoration-none modalregistro"
-              >Puedes crearlo dando click aqui</a
-            >
-          </p>
-          <br />
-          <p>
-            Si olvidaste tu usuario o contraseña
-            <a href="./pages/error404.html" class="text-decoration-none modalregistro"
-              >te ayudamos a recuperarlo</a
-            >
-          </p>
+            </p>
+            <br />
+            <p>
+              Si olvidaste tu usuario o contraseña
+              <a
+                href="./pages/error404.html"
+                class="text-decoration-none modalregistro"
+                >te ayudamos a recuperarlo</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
