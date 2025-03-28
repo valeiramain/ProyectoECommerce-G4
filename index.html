@@ -1,357 +1,373 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Proyecto grupal de E-Commerce para fin de Modulo 1"
-    />
-    <meta
-      name="author"
-      content="Jose Romero - Luciana Ruiz - Valentina Iramain"
-    />
-    <meta name="keywwords" content="ecommerce, venta online" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Proyecto de E-Commerce</title>
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg BGnavbar p-3">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand text-light fontFamilyMarca marcadepagina"
-            href="./index.html"
-            >Rollingshoes</a
-          >
-          <button
-            class="navbar-toggler bg-dark"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proyecto grupal de E-Commerce para fin de Modulo 1" />
+  <meta name="author" content="Jose Romero - Luciana Ruiz - Valentina Iramain" />
+  <meta name="keywwords" content="ecommerce, venta online" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Proyecto de E-Commerce</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg BGnavbar p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fontFamilyMarca marcadepagina" href="./index.html">Rollingshoes</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item d-flex align-items-center text-center">
+              <a class="nav-link text-light" href="#">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link text-light" href="#">Contacto</a>
+            </li>
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu border border-dark bg-light">
+                <li>
+                  <a class="dropdown-item listadenav" href="#">Zapatilla de hombre</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item listadenav" href="#">Zapatilla de mujer</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item listadenav" href="#">Zapatilla de Niño</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="Search" minlength="5"
+              maxlength="30" />
+            <button class="btn border border-light btn-outline-primary me-5 text-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn border border-light text-light btn-outline-primary" data-bs-toggle="modal"
+            data-bs-target="#loginModal">
+            Ingresar
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item d-flex align-items-center">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item d-flex align-items-center text-center">
-                <a class="nav-link text-light" href="">Acerca de nosotros</a>
-              </li>
-              <li class="nav-item d-flex align-items-center">
-                <a class="nav-link text-light" href="./pages/contacto.html"
-                  >Contacto</a
-                >
-              </li>
-              <li class="nav-item dropdown d-flex align-items-center">
-                <a
-                  class="nav-link dropdown-toggle text-light"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Categorias
-                </a>
-                <ul class="dropdown-menu border border-dark bg-light">
-                  <li>
-                    <a
-                      class="dropdown-item listadenav"
-                      href="./pages/detalleCategoriaHombres.html"
-                      >Zapatilla de hombre</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item listadenav"
-                      href="./pages/error404.html"
-                      >Zapatilla de mujer</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item listadenav"
-                      href="./pages/detalleCategoriaKids.html"
-                      >Zapatilla de Niño</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="¿Que buscas?"
-                aria-label="Search"
-                minlength="5"
-                maxlength="30"
-              />
-              <button
-                class="btn border border-light btn-outline-primary me-5 text-light"
-                type="submit"
-              >
-                Buscar
-              </button>
-            </form>
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn border border-light text-light btn-outline-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-            >
-              Ingresar
-            </button>
-
-            <button
-              class="btn border border-light mx-1 my-2 btn-outline-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCarrito"
-              type="submit"
-            >
-              <a href="" class="text-light p-2"
-                ><i class="bi bi-cart-fill"></i
-              ></a>
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div
-              class="position-relative containerPrincipal d-flex flex-column"
-            >
-              <div class="container z-1 ms-4 my-auto containerGrande">
-                <div class="w-75 my-auto ms-md-5">
-                  <h3 class="w-50 text-center bannerTitulo">
-                    Nike Air <span class="text-light">Jordan</span>
-                  </h3>
+          <!-- Modal -->
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="loginModalLabel">
+                    Inicia Sesion
+                  </h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="z-1 w-75 my-auto text-center ms-md-5">
-                  <p class="w-50">
-                    <i class="bi bi-star-fill text-warning bannerTexto"></i>
-                    <i class="bi bi-star-fill text-warning bannerTexto"></i>
-                    <i class="bi bi-star-fill text-warning bannerTexto"></i>
-                    <i class="bi bi-star-fill text-warning bannerTexto"></i>
-                    <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="Email" class="form-label">Mail</label>
+                      <input type="email" class="form-control border border-dark" id="Email"
+                        aria-describedby="emailHelp" minlength="10" maxlength="40" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="contrasena" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control border border-dark" id="contrasena" minlength="10"
+                        maxlength="20" required />
+                    </div>
+                    <div class="text-end">
+                      <button type="submit" class="btn btn-primary">
+                        Ingresar
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer d-flex justify-content-center text-center">
+                  <p>
+                    Si no tienes tu usuario y contraseña
+                    <a href="" class="text-decoration-none modalregistro">Puedes crearlo dando click aqui</a>
                   </p>
-                  <p class="text-light w-50 bannerTexto">
-                    <b>¡Consíguelas ahora!</b><br />#AirJordan #JustDoIt <br />
+                  <br />
+                  <p>
+                    Si olvidaste tu usuario o contraseña
+                    <a href="" class="text-decoration-none modalregistro">te ayudamos a recuperarlo</a>
                   </p>
                 </div>
               </div>
-              <div class="containerFondo w-100 position-absolute"></div>
-              <div class="containerFrente position-absolute"></div>
-              <div
-                class="position-absolute z-1 w-75 py-3 h-100 d-flex justify-content-end containerZapatilla mb-5"
-              >
-                <img
-                  src="./img/zapatillaConQuinceDescuento.png"
-                  alt="Zapatilla Nike Air Jordan"
-                  class="w-50 p-md-3 p-lg-5 sombra object-fit-contain"
-                />
-              </div>
             </div>
           </div>
-          <div class="carousel-item containerPrincipal position-relative">
-            <video
-              class="d-block object-fit-cover w-100 h-100"
-              autoplay
-              muted
-              loop
-            >
-              <source src="./img/videoZapatillas.mp4" type="video/mp4" />
-              Tu navegador no soporta videos.
-            </video>
-            <div
-              class="position-absolute w-100 z-1 top-0 bottom-0 d-flex justify-content-center pantallaNegra"
-            >
-              <div class="w-75 align-content-end">
-                <h5 class="text-center segundoBannerTitulo pb-3 pb-lg-4">
-                  Potencia tu ritmo, mejora tu juego.
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item containerPrincipal position-relative">
-            <img
-              src="./img/tercerBanner.jpg"
-              class="d-block w-100 h-100 object-fit-cover zapatillaConEnvio"
-              alt="Zapatillas con envío gratis a partir de $255.000"
-            />
-            <div
-              class="position-absolute w-100 z-1 top-0 bottom-0 pantallaNegra d-flex align-content-center"
-            ></div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev position-absolute top-50 translate-middle-y"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next position-absolute top-50 translate-middle-y"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </section>
-    </main>
-    <footer>
-      <section class="container-fluid">
-        <article class="row">
-          <div class="col-md-4 text-center footersepardor my-3">
-            <a href="/index.html" class="text-decoration-none">
-              <img
-                src="./img/Logotipo.png"
-                alt="logo de zapatilla"
-                class="logotipo"
-              />
-              <p class="fs-2 fontFamilyMarca text-light">Rolingshoes</p>
-            </a>
-          </div>
-          <div class="col-md-4 text-center text-md-start my-3 footersepardor">
-            <h4 class="text-white">Informacion</h4>
-            <ul class="m-0 list-unstyled">
-              <li class="mb-1">
-                <a href="" class="text-decoration-none text-light"
-                  >Acerca de nosotros</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  href="./pages/contacto.html"
-                  class="text-decoration-none text-light"
-                  >Contacto</a
-                >
-              </li>
-              <li class="mb-1">
-                <a href="./index.html" class="text-decoration-none text-light"
-                  >Nuestros productos</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-center text-md-start my-3">
-            <h4 class="text-white">Contacto</h4>
-            <ul class="m-0 list-unstyled text-light">
-              <li class="mb-1">Telefono: +543815887741</li>
-              <li class="mb-1">Mail: Rollingshoes@gmail.com</li>
-              <li class="mb-1">
-                Direccion: Dirección: Gral. José María Paz 576, San Miguel de
-                Tucumán, Tucumán
-              </li>
-            </ul>
-          </div>
-        </article>
-      </section>
-    </footer>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title fs-5" id="loginModalLabel">Inicia Sesion</h2>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="Email" class="form-label">Mail</label>
-                <input
-                  type="email"
-                  class="form-control border border-dark bg-light"
-                  id="Email"
-                  aria-describedby="emailHelp"
-                  minlength="10"
-                  maxlength="40"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="contrasena" class="form-label">Contraseña</label>
-                <input
-                  type="password"
-                  class="form-control border border-dark bg-light"
-                  id="contrasena"
-                  minlength="10"
-                  maxlength="20"
-                  required
-                />
-              </div>
-              <div class="text-end">
-                <button type="submit" class="btn btn-primary">Ingresar</button>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer d-flex justify-content-center text-center">
-            <p>
-              Si no tienes tu usuario y contraseña
-              <a
-                href="./pages/nuevaCuenta.html"
-                class="text-decoration-none modalregistro"
-                >Puedes crearlo dando click aqui</a
-              >
-            </p>
-            <br />
-            <p>
-              Si olvidaste tu usuario o contraseña
-              <a
-                href="./pages/error404.html"
-                class="text-decoration-none modalregistro"
-                >te ayudamos a recuperarlo</a
-              >
-            </p>
-          </div>
+          <button class="btn border border-light mx-1 my-2 btn-outline-primary">
+            <a href="" class="text-light p-2"><i class="bi bi-cart-fill"></i></a>
+          </button>
         </div>
       </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </nav>
+  </header>
+  <main>
+    <section id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="position-relative containerPrincipal d-flex flex-column">
+            <div class="container z-1 ms-4 my-auto containerGrande">
+              <div class="w-75 my-auto ms-md-5">
+                <h3 class="w-50 text-center bannerTitulo">
+                  Nike Air <span class="text-light">Jordan</span>
+                </h3>
+              </div>
+              <div class="z-1 w-75 my-auto text-center ms-md-5">
+                <p class="w-50">
+                  <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                  <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                  <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                  <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                  <i class="bi bi-star-fill text-warning bannerTexto"></i>
+                </p>
+                <p class="text-light w-50 bannerTexto">
+                  <b>¡Consíguelas ahora!</b><br />#AirJordan #JustDoIt <br />
+                </p>
+              </div>
+            </div>
+            <div class="containerFondo w-100 position-absolute"></div>
+            <div class="containerFrente position-absolute"></div>
+            <div class="position-absolute z-1 w-75 py-3 h-100 d-flex justify-content-end containerZapatilla mb-5">
+              <img src="./img/zapatillaConQuinceDescuento.png" alt="Zapatilla Nike Air Jordan"
+                class="w-50 p-md-3 p-lg-5 sombra object-fit-contain" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item containerPrincipal position-relative">
+          <video class="d-block object-fit-cover w-100 h-100" autoplay muted loop>
+            <source src="./img/videoZapatillas.mp4" type="video/mp4" />
+            Tu navegador no soporta videos.
+          </video>
+          <div class="position-absolute w-100 z-1 top-0 bottom-0 d-flex justify-content-center pantallaNegra">
+            <div class="w-75 align-content-end">
+              <h5 class="text-center segundoBannerTitulo pb-3 pb-lg-4">
+                Potencia tu ritmo, mejora tu juego.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item containerPrincipal position-relative">
+          <img src="./img/tercerBanner.jpg" class="d-block w-100 h-100 object-fit-cover zapatillaConEnvio"
+            alt="Zapatillas con envío gratis a partir de $255.000" />
+          <div class="position-absolute w-100 z-1 top-0 bottom-0 pantallaNegra d-flex align-content-center"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev position-absolute top-50 translate-middle-y" type="button"
+        data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next position-absolute top-50 translate-middle-y" type="button"
+        data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- Sección de categoría "Hombres" -->
+    <h1 class="container text-light fontFamilyMarca mt-5">
+      <b>Categorías</b>
+    </h1>
+    <section class="container rounded-4 mb-4 mb-md-3">
+      <article class="mt-3 mb-5 row align-items-center justify-content-center contenedorCategoria">
+        <div class="col-12 col-md-4 text-center">
+          <div class="position-relative d-inline-block">
+            <a href="./pages/detalleCategoriaHombres.html">
+              <img src="./img/nikeHombre.jpg" alt="Zapatillas Nike Air Jordan para hombres"
+                class="img-fluid rounded-4 bordeCategorias imgCategoria" />
+            </a>
+            <div class="position-absolute bottom-0 w-100 bgNegroRgba text-center py-2 rounded-bottom-4">
+              <h3 class="text-white m-0">
+                <a class="text-decoration-none text-light-emphasis" href="./pages/detalleCategoriaHombres.html">
+                  <b>Hombres</b>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 text-center text-md-start">
+          <p class="lead rounded-4 fontFamilyMarca display-6 text-center mt-3">
+            <span class="text-info">Next Level Performance</span>
+          </p>
+          <p class="lead p-2 p-md-3 rounded-4 textoJustificado">
+            Descubre nuestra selección de zapatillas deportivas para hombre,
+            diseñadas para ofrecer el máximo rendimiento, comodidad y estilo.
+            Ya sea que busques un calzado para correr, entrenar en el gimnasio
+            o para un look urbano y moderno, aquí encontrarás las mejores
+            marcas y modelos.
+          </p>
+          <div class="shoe-container">
+            <img src="./img/animacion.png" class="shoe shoe-left animacion" alt="Zapatilla Izquierda Hombres" />
+            <img src="./img/animacion.png" class="shoe shoe-right animacion" alt="Zapatilla Derecha Mujeres" />
+          </div>
+        </div>
+      </article>
+      <article class="mb-5 row align-items-center justify-content-center contenedorCategoria">
+        <div class="col-12 col-md-4 text-center">
+          <div class="position-relative d-inline-block">
+            <a href="./pages/detalleCategoriaMujeres.html">
+              <img src="./img/nikeMujer.jpg" alt="Zapatillas Nike Air Jordan para mujeres"
+                class="img-fluid rounded-4 bordeCategorias imgCategoria" />
+            </a>
+            <div class="position-absolute bottom-0 w-100 bgNegroRgba text-center py-2 rounded-bottom-4">
+              <h3 class="text-white m-0">
+                <a class="text-decoration-none text-light-emphasis" href="./pages/detalleCategoriaMujeres.html">
+                  <b>Mujeres</b>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 text-center text-md-start">
+          <p class="lead rounded-4 fontFamilyMarca display-6 text-center mt-3">
+            <span class="text-info">Unstoppable Confidence</span>
+          </p>
+          <p class="lead p-2 p-md-3 rounded-4 textoJustificado">
+            Encuentra las zapatillas deportivas ideales para acompañarte en
+            cada reto. Desde entrenamientos exigentes hasta el día a día,
+            nuestra colección combina innovación, diseño y confort para que te
+            muevas con total seguridad y confianza.
+          </p>
+          <div class="shoe-container">
+            <img src="./img/animacionMujer.png" class="shoe shoe-left animacion" alt="Zapatilla Izquierda Mujeres" />
+            <img src="./img/animacionMujer.png" class="shoe shoe-right animacion" alt="Zapatilla Derecha Mujeres" />
+          </div>
+        </div>
+      </article>
+      <article class="mb-5 row align-items-center justify-content-center contenedorCategoria">
+        <div class="col-12 col-md-4 text-center">
+          <div class="position-relative d-inline-block">
+            <a href="./pages/detalleCategoriaKids.html">
+              <img src="./img/nikeNenes.jpg" alt="Zapatillas para niños"
+                class="img-fluid rounded-4 bordeCategorias imgCategoria" />
+            </a>
+            <div class="position-absolute bottom-0 w-100 bgNegroRgba text-center py-2 rounded-bottom-4">
+              <h3 class="text-white m-0">
+                <a class="text-decoration-none text-light-emphasis" href="./pages/detalleCategoriaKids.html">
+                  <b>Niños</b>
+                </a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 text-center text-md-start">
+          <p class="lead rounded-4 fontFamilyMarca display-6 text-center mt-3">
+            <span class="text-info">Play Without Limits</span>
+          </p>
+          <p class="lead p-2 p-md-3 rounded-4 textoJustificado">
+            Diseñadas para la aventura y la diversión, nuestras zapatillas
+            deportivas para niños ofrecen comodidad, resistencia y estilo.
+            Perfectas para correr, saltar y explorar sin preocupaciones,
+            brindando el soporte ideal en cada paso.
+          </p>
+          <div class="shoe-container">
+            <img src="./img/animacionNiño.png" class="shoe shoe-left animacion" alt="Zapatilla Izquierda Niños" />
+            <img src="./img/animacionNiño.png" class="shoe shoe-right animacion" alt="Zapatilla Derecha Niños" />
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container contenedorCategoria rounded-4 mb-4 mb-md-5 d-flex justify-content-center">
+      <article class="row w-100 justify-content-center gap-5">
+        <div class="card col-9 col-md-4 col-lg-3 overflow-hidden rounded-4 bg-dark border border-3 bordeCategorias">
+            <img src="./img/destacadaHombres.png"
+              class="card-img-top object-fit-cover w-100 img-fluid"
+              alt="Zapatilla Destacada para Hombres" />
+          <div class="card-body">
+            <p class="badge bg-success">MÁS VENDIDO</p>
+            <p class="badge bg-secondary">HOMBRES</p>
+            <h5 class="card-title"><b>Air Jordan 1 Mid</b></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card col-9 col-md-4 col-lg-3 overflow-hidden rounded-4 bg-dark border border-3 bordeCategorias">
+            <img src="./img/destacadaMujeres.png"
+              class="card-img-top object-fit-cover w-100"
+              alt="Zapatilla Destacada para Mujeres" />
+          <div class="card-body">
+            <p class="badge bg-success">MÁS VENDIDO</p>
+            <p class="badge bg-secondary">MUJERES</p>
+            <h5 class="card-title"><b>Puma X-Ray 3</b></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+        <div class="card col-9 col-md-4 col-lg-3 overflow-hidden rounded-4 bg-dark border border-3 bordeCategorias">
+            <img src="./img/destacadaNiños.png"
+              class="card-img-top object-fit-cover w-100"
+              alt="Zapatilla Destacada para Niños" />
+          <div class="card-body">
+            <p class="badge bg-success">MÁS VENDIDO</p>
+            <p class="badge bg-secondary">NIÑOS</p>
+            <h5 class="card-title"><b>Adidas Superstar II</b></h5>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="container-fluid bgPublicidad mb-5 d-none d-sm-block">
+      <!-- Publicidad para tablets y computadoras -->
+        <img src="./img/publicidadNike.jpg" alt="Publicidad de Nike" class="object-fit-cover w-100 img-fluid">    
+    </section>
+  </main>
+  <footer>
+    <section class="container-fluid">
+      <article class="row">
+        <div class="col-md-4 text-center footersepardor my-3">
+          <a href="/index.html" class="text-decoration-none">
+            <img src="./img/Logotipo.png" alt="logo de zapatilla" class="logotipo" />
+            <p class="fs-2 fontFamilyMarca text-light">Rolingshoes</p>
+          </a>
+        </div>
+        <div class="col-md-4 text-center text-md-start my-3 footersepardor">
+          <h4 class="text-white">Informacion</h4>
+          <ul class="m-0 list-unstyled">
+            <li class="mb-1">
+              <a href="" class="text-decoration-none text-light">Acerca de nosotros</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="text-decoration-none text-light">Contacto</a>
+            </li>
+            <li class="mb-1">
+              <a href="" class="text-decoration-none text-light">Nuestros productos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-start my-3">
+          <h4 class="text-white">Contacto</h4>
+          <ul class="m-0 list-unstyled text-light">
+            <li class="mb-1">Telefono: +543815887741</li>
+            <li class="mb-1">Mail: Rollingshoes@gmail.com</li>
+            <li class="mb-1">
+              Direccion: Dirección: Gral. José María Paz 576, San Miguel de
+              Tucumán, Tucumán
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
