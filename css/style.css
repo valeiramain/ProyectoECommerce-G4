@@ -203,7 +203,7 @@ footer {
     object-position: center bottom;
 }
 
-/* Estilos de la Categoría "Hombres" */
+/* Estilos de las Categorías */
 .bordeCategorias {
     border: 3px groove var(--oscuro);
 }
@@ -302,12 +302,36 @@ footer {
 }
 
 /* Animación de caminar */
+
 @keyframes walk {
     0% { transform: translateY(0) rotate(0deg); }
     25% { transform: translateY(-10px) rotate(10deg); }
     50% { transform: translateY(0) rotate(0deg); }
     75% { transform: translateY(-10px) rotate(-10deg); }
     100% { transform: translateY(0) rotate(0deg); }
+}
+
+.zapatillasDestacadas{
+  transform: rotate(330deg);
+  filter: drop-shadow(0.5px 0.5px 8px var(--celesteOscuro));
+}
+
+.bordeZapatillasDestacadas{
+  border: 2px groove rgba(0, 0, 0, 0.469);
+}
+
+.imagenEspejo {
+  transform: scaleX(-1) rotate(30deg)
+}
+
+.contenedorDerecha{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.bgPublicidad{
+  background-color: var(--azul);
 }
 
 .modalregistro:hover {
@@ -331,6 +355,7 @@ footer {
     .sombra {
         max-width: 60%;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -351,7 +376,8 @@ footer {
     .sombra {
         max-width: 50%;
     }
-}
+  }
+
 @media all and (max-width: 767px){
     .footersepardor{
         border-bottom: white solid 1px;
