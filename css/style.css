@@ -207,6 +207,49 @@ footer {
   font-weight: 600;
 }
 
+/* PAGINA DETALLE PRODUCTO */
+.btnAgregarCarrito{
+  background-color: var(--celesteOscuro);
+  color: white;
+}
+
+/* comentarios */
+
+.contenedorCargaComentarios {
+  background: #5194d7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color:var(--azul);
+}
+
+.contenedorComentarios {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color:var(--azul);
+}
+.imgComentarios {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.linkComentarios a {
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+.linkComentarios a:hover {
+  text-decoration: underline;
+}
+
+/* fin pagina detalle productos */
+
+
 @media (min-width: 768px) {
   .containerPrincipal {
     height: 400px;
