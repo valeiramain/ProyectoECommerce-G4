@@ -12,7 +12,7 @@
 /*baja de google fonts la tipografia */
 @font-face {
   font-family: "Tektur";
-  src: url(../fonts/Tektur-VariableFont_wdth\wght.ttf);
+  src: url(/fonts/Tektur-VariableFont_wdth\,wght.ttf);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: "Quicksand";
-  src: url(../fonts/Tektur-VariableFont_wdth\wght.ttf);
+  src: url(/fonts/Quicksand-VariableFont_wght.ttf);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -47,11 +47,11 @@ main {
   font-family: "Quicksand";
 }
 
-.formulario{
-    background: var(--azul);
+.formulario {
+  background: var(--azul);
 }
-.bordesformulario:hover{
-border: solid ;
+.bordesformulario:hover {
+  border: solid;
 }
 
 /* PAGINA DETALLE DE CATEGORIAS */
@@ -125,82 +125,82 @@ footer {
   font-size: 20px;
 }
 
-.listadenav:hover{
-    color: rgb(0, 0, 253);
-    font-size: 20px;
-    font-weight: 600;
-    }
-    .listadenav{
-        transition: 500ms;
-    }
-    .modalregistro:hover{
-        font-weight: 600;
-    }
-
+.listadenav:hover {
+  color: rgb(0, 0, 253);
+  font-size: 20px;
+  font-weight: 600;
+  background-color: white;
+}
+.listadenav {
+  transition: 500ms;
+  color: black;
+}
+.modalregistro:hover {
+  font-weight: 600;
+}
 
 /* Estilos Banner de index */
 
 .containerPrincipal {
-    height: 200px;
-    position: relative;
-    /* overflow: hidden; */
+  height: 200px;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .containerFondo {
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--azul);
-    z-index: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--azul);
+  z-index: 0;
 }
 
 .containerFrente {
-    width: 50%;
-    background-color: var(--celesteOscuro);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+  width: 50%;
+  background-color: var(--celesteOscuro);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .bannerTitulo {
-    color: var(--celesteMedio);
-    font-family: "Prompt", sans-serif;
-    font-size: 1.8rem;
+  color: var(--celesteMedio);
+  font-family: "Prompt", sans-serif;
+  font-size: 1.8rem;
 }
 
-.segundoBannerTitulo{
-    font-size: 1rem;
-    color: var(--celesteClaro);
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.822)
+.segundoBannerTitulo {
+  font-size: 1rem;
+  color: var(--celesteClaro);
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.822);
 }
-
 
 .tercerBannerTitulo {
-    text-shadow: 2px 2px 8px rgba(74, 84, 195, 0.7), 5px 5px 20px rgba(234, 41, 200, 0.7);
+  text-shadow: 2px 2px 8px rgba(74, 84, 195, 0.7),
+    5px 5px 20px rgba(234, 41, 200, 0.7);
 }
-
 
 .bannerTexto {
-    font-size: 0.6rem;
-    text-align: center;
+  font-size: 0.6rem;
+  text-align: center;
 }
 
-.containerZapatilla{
-    margin-left: 15%;
+.containerZapatilla {
+  margin-left: 15%;
 }
 
 .carousel-item video {
-    object-position: center bottom; /* Muestra más la parte inferior */
+  object-position: center bottom; /* Muestra más la parte inferior */
 }
 
 .pantallaNegra{
     background-color: hwb(0 0% 100% / 0.216);
 }
 
-.zapatillaConEnvio{
-    object-position: center bottom;
+.zapatillaConEnvio {
+  object-position: center bottom;
 }
 
 /* Estilos de las Categorías */
@@ -338,6 +338,48 @@ footer {
   font-weight: 600;
 }
 
+/* PAGINA DETALLE PRODUCTO */
+.btnAgregarCarrito{
+  background-color: var(--celesteOscuro);
+  color: white;
+}
+
+/* comentarios */
+
+.contenedorCargaComentarios {
+  background: #5194d7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color:var(--azul);
+}
+
+.contenedorComentarios {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color:var(--azul);
+}
+.imgComentarios {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.linkComentarios a {
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+}
+.linkComentarios a:hover {
+  text-decoration: underline;
+}
+
+/* fin pagina detalle productos */
+
 
 @media (min-width: 768px) {
     .containerPrincipal {
@@ -393,7 +435,6 @@ footer {
     border-right: white solid 1px;
   }
 }
-
 
 @media all and (min-width: 993px) {
   .footersepardor {
