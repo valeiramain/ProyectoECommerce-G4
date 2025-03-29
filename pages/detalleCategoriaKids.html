@@ -29,7 +29,7 @@
               <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item d-flex align-items-center text-center">
-              <a class="nav-link text-light" href="#">Acerca de nosotros</a>
+              <a class="nav-link text-light" href="./sobreNosotros.html">Acerca de nosotros</a>
             </li>
             <li class="nav-item d-flex align-items-center">
               <a class="nav-link text-light" href="./contacto.html">Contacto</a>
@@ -72,9 +72,13 @@
             Ingresar
           </button>
 
-          <button class="btn border border-light mx-1 my-2 btn-outline-primary">
-            <a href="" class="text-light p-2"><i class="bi bi-cart-fill"></i></a>
-          </button>
+          <button
+          class="btn border border-light mx-1 my-2 btn-outline-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modalCarrito"
+        >
+          <i class="bi bi-cart-fill text-light"></i>
+        </button>
         </div>
       </div>
     </nav>
@@ -223,7 +227,7 @@
           <h4 class="text-white">Informacion</h4>
           <ul class="m-0 list-unstyled">
             <li class="mb-1">
-              <a href="" class="text-decoration-none text-light">Acerca de nosotros</a>
+              <a href="./sobreNosotros.html" class="text-decoration-none text-light">Acerca de nosotros</a>
             </li>
             <li class="mb-1">
               <a href="./contacto.html" class="text-decoration-none text-light">Contacto</a>
@@ -242,6 +246,18 @@
               Direccion: Dirección: Gral. José María Paz 576, San Miguel de
               Tucumán, Tucumán
             </li>
+            <li class="mb-1">Nuestras redes sociales</li>
+              <div class="text-center footerRedes">
+                <a href="#" class="text-decoration-none text-light"
+                  ><i class="bi bi-instagram mx-2"></i
+                ></a>
+                <a href="#" class="text-decoration-none text-light"
+                  ><i class="bi bi-facebook mx-2"></i
+                ></a>
+                <a href="#" class="text-decoration-none text-light"
+                  ><i class="bi bi-twitter-x mx-2"></i
+                ></a>
+              </div>
           </ul>
         </div>
       </article>
@@ -290,19 +306,135 @@
       </div>
     </div>
   </div>
+  <!-- modal_carrito.html -->
+  <section
+  class="modal fade"
+  id="modalCarrito"
+  tabindex="-1"
+  aria-labelledby="carritoModalLabel"
+  aria-hidden="true"
+>
+  <article class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title tituloCarrito" id="carritoModalLabel">
+          Detalle de Carrito
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped border">
+          <thead class="tituloCarrito">
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Talle</th>
+              <th scope="col">Color</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Air Jordan 1 Mid</td>
+              <td>42</td>
+              <td>Azul</td>
+              <td>249.999,00</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Adidas Duromo SL 2</td>
+              <td>40</td>
+              <td>Gris</td>
+              <td>129.999,00</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Converse All Star</td>
+              <td>34</td>
+              <td>Rojo</td>
+              <td>118.999,00</td>
+              <td>
+                <button class="btn btn-danger btn-sm">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Agregar Bolsa -->
+        <article class="container bg-light-subtle py-2 my-4 rounded">
+          <div class="d-flex justify-content-between">
+            <p
+              class="lead text-warning d-inline-block align-item-center mb-0"
+            >
+              ¡Quiero Bolsa!
+            </p>
+            <button class="btn btn-warning" type="button">
+              Agregar Bolsa
+            </button>
+          </div>
+        </article>
+
+        <!-- Calcular envío -->
+        <article class="container bg-light py-2 mb-4 rounded">
+          <div class="d-flex align-items-center gap-3">
+            <i class="bi bi-truck fs-4 text-dark"></i>
+            <input
+              type="text"
+              class="form-control w-50"
+              id="codigoPostal"
+              placeholder="Introducí CP..."
+            />
+            <div class="container d-flex justify-content-end p-0">
+              <button class="btn btn-secondary" type="button">
+                Calcular Envío
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- total a pagar -->
+        <article>
+          <div
+            class="d-flex justify-content-between py-2 px-3 text-light rounded fondoCarrito mb-3"
+          >
+            <h4 class="fw-semibold mb-0">TOTAL =</h4>
+            <h4 class="fw-semibold mb-0">$ 498.997,00</h4>
+          </div>
+        </article>
+
+        <!-- botones -->
+        <div
+          class="modal-footer d-flex flex-sm-column align-items-center justify-content-center flex-md-row align-items-md-between justify-content-md-between"
+        >
+          <a href="../index.html" class="btn btn-secondary"
+            >Seguir Comprando</a
+          >
+          <a href="./error404.html" class="btn btn-primary"
+            >Finalizar Compra</a
+          >
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <!-- Cargar el modal desde modal_carrito.html -->
-  <script>
-    fetch('../modalCarrito.html')
-      .then(response => response.text())
-      .then(data => {
-        document.body.insertAdjacentHTML('beforeend', data);
-      })
-      .catch(error => console.error('Error cargando el modal:', error));
-  </script>
-  <!-- Cargar el modal desde modal_carrito.html -->
+  
 </body>
 
 </html>
