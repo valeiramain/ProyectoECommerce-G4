@@ -195,8 +195,8 @@ footer {
   object-position: center bottom; /* Muestra más la parte inferior */
 }
 
-.pantallaNegra{
-    background-color: hwb(0 0% 100% / 0.216);
+.pantallaNegra {
+  background-color: hwb(0 0% 100% / 0.216);
 }
 
 .zapatillaConEnvio {
@@ -205,61 +205,61 @@ footer {
 
 /* Estilos de las Categorías */
 .bordeCategorias {
-    border: 3px groove var(--oscuro);
+  border: 3px groove var(--oscuro);
 }
 
 .imgCategoria {
-    filter: grayscale(80%);
-    transition: filter 500ms;
-    max-width: 100%;
-    height: auto;
-    max-height: 400px;
+  filter: grayscale(80%);
+  transition: filter 500ms;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
 }
 
 .imgCategoria:hover {
-    filter: grayscale(30%);
+  filter: grayscale(30%);
 }
 
 .contenedorCategoria {
-    padding: 20px;
-    border: 2px solid rgba(43, 43, 43, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  padding: 20px;
+  border: 2px solid rgba(43, 43, 43, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .contenedorCategoria:hover {
-    transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
 }
 
 .textoJustificado {
-    text-align: justify;
+  text-align: justify;
 }
 
 /* Contenedor de Zapatillas */
 .shoe-container {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: 70px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
 }
 
 /* Estilos de las zapatillas */
 .shoe {
-    position: absolute;
-    width: 70px;
-    bottom: 0;
-    filter: grayscale(65%);
-    animation: walk 2s infinite ease-in-out;
+  position: absolute;
+  width: 70px;
+  bottom: 0;
+  filter: grayscale(65%);
+  animation: walk 2s infinite ease-in-out;
 }
 
-.bgNegroRgba{
+.bgNegroRgba {
   background-color: hsla(0, 4%, 9%, 0.5);
 }
 
@@ -277,186 +277,132 @@ footer {
 /* Animación de caminar */
 
 @keyframes walk {
-  0% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-10px) rotate(10deg); }
-  50% { transform: translateY(0) rotate(0deg); }
-  75% { transform: translateY(-10px) rotate(-10deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(10deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-10deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
-.zapatillasDestacadas{
-transform: rotate(330deg);
-filter: drop-shadow(0.5px 0.5px 8px var(--celesteOscuro));
+.zapatillasDestacadas {
+  transform: rotate(330deg);
+  filter: drop-shadow(0.5px 0.5px 8px var(--celesteOscuro));
 }
 
-.bordeZapatillasDestacadas{
-border: 2px groove rgba(0, 0, 0, 0.469);
+.bordeZapatillasDestacadas {
+  border: 2px groove rgba(0, 0, 0, 0.469);
 }
 
 .imagenEspejo {
-transform: scaleX(-1) rotate(30deg)
+  transform: scaleX(-1) rotate(30deg);
 }
 
-.contenedorDerecha{
-position: absolute;
-bottom: 0;
-right: 0;
+.contenedorDerecha {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-.bgPublicidad{
-background-color: var(--azul);
+.bgPublicidad {
+  background-color: var(--azul);
 }
 
 .modalregistro:hover {
-font-weight: 600;
+  font-weight: 600;
 }
 
 /* PAGINA DETALLE PRODUCTO */
-.btnAgregarCarrito{
-background-color: var(--celesteOscuro);
-color: white;
+.btnAgregarCarrito {
+  background-color: var(--celesteOscuro);
+  color: white;
 }
 
 /* comentarios */
 
 .contenedorCargaComentarios {
-background: #5194d7;
-padding: 10px;
-border-radius: 10px;
-margin-bottom: 15px;
-color:var(--azul);
+  background: #5194d7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: var(--azul);
 }
 
 .contenedorComentarios {
-background: #f8f9fa;
-padding: 10px;
-border-radius: 10px;
-margin-bottom: 15px;
-color:var(--azul);
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: var(--azul);
 }
 .imgComentarios {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .linkComentarios a {
-font-size: 14px;
-margin-right: 10px;
-cursor: pointer;
-color: #007bff;
-text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
 }
 .linkComentarios a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Estilos de la Página 'Acerca de Nosotros' */
 
-.imgCircular{
+.imgCircular {
   aspect-ratio: 1/1;
 }
 
-/* Media Queries para Tablets */
-
-@media (min-width: 768px) {
-    .shoe-container{
-        max-width: 400px;
-        height: 90px;
-    }
-    .shoe {
-        width: 100px;
-    }
-}
-
-/* Media Queries para Computadoras */
-
-@media (min-width: 992px) {
-    .shoe-container {
-        max-width: 500px;
-        height: 120px;
-    }
-    .shoe {
-        width: 120px;
-    }
-    .imgCategoriaHombre {
-        height: 400px;
-    }
-}
-
-/* fin pagina detalle productos */
-
-
-@media (min-width: 768px) {
-    .containerPrincipal {
-        height: 400px;
-    }
-    .segundoBannerTitulo{
-        font-size: 1.5rem;
-    }
-    .bannerTitulo {
-        font-size: 2.5rem;
-    }
-    .bannerTexto {
-        font-size: 1rem;
-    }
-    .sombra {
-        max-width: 60%;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .containerPrincipal {
-        height: 600px;
-    }
-    .containerGrande{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .bannerTitulo {
-        font-size: 3.5rem;
-    }
-    .bannerTexto {
-        font-size: 1.5rem;
-    }
-    .sombra {
-        max-width: 50%;
-    }
-  }
-
-@media all and (max-width: 767px){
-    .footersepardor{
-        border-bottom: white solid 1px;
-    }
-}
+/* -------------------------------- */
+/* celulares */
 @media all and (max-width: 767px) {
   .footersepardor {
     border-bottom: white solid 1px;
   }
 }
+/* tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .footersepardor {
     border-right: white solid 1px;
   }
-}
-
-@media all and (min-width: 993px) {
-  .footersepardor {
-    border-right: white solid 1px;
+  .shoe-container {
+    max-width: 400px;
+    height: 90px;
   }
-}
-
-@media all and (min-width: 993px) {
-  .marcadepagina {
-    font-size: 35px;
+  .shoe {
+    width: 100px;
   }
-}
-
-/* MEDIAS QUERIES DETALLE CATEGORIAS */
-/* 💻 Estilos para tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
+  /* banner principal */
+  .containerPrincipal {
+    height: 400px;
+  }
+  .segundoBannerTitulo {
+    font-size: 1.5rem;
+  }
+  .bannerTitulo {
+    font-size: 2.5rem;
+  }
+  .bannerTexto {
+    font-size: 1rem;
+  }
+  .sombra {
+    max-width: 60%;
+  }
+  /* detalleCategoria hombre y niños */
   .contenedorVideoDetalleCategoria {
     height: 350px;
   }
@@ -464,10 +410,51 @@ text-decoration: underline;
     height: 200px;
   }
 }
+/* computadoras */
+@media all and (min-width: 993px) {
+  .footersepardor {
+    border-right: white solid 1px;
+  }
+  .shoe-container {
+    max-width: 500px;
+    height: 120px;
+  }
+  .shoe {
+    width: 120px;
+  }
+  .imgCategoriaHombre {
+    height: 400px;
+  }
+  /* banner principal */
 
-/* 🖥️ Estilos para pantallas grandes */
-@media (min-width: 1025px) {
+  .containerPrincipal {
+    height: 600px;
+  }
+  .containerGrande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannerTitulo {
+    font-size: 3.5rem;
+  }
+  .bannerTexto {
+    font-size: 1.5rem;
+  }
+  .sombra {
+    max-width: 50%;
+  }
+  /* navbar */
+  .marcadepagina {
+    font-size: 35px;
+  }
+  /* detalleCategoria hombre y niños */
   .contenedorVideoDetalleCategoria {
     height: 400px;
   }
+
+  .error404-img {
+    height: 600px;
+  }
 }
+/* -------------------------------- */
