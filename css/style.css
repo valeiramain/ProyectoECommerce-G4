@@ -351,6 +351,12 @@ text-decoration: none;
 text-decoration: underline;
 }
 
+/* Estilos de la Página 'Acerca de Nosotros' */
+
+.imgCircular{
+  aspect-ratio: 1/1;
+}
+
 /* Media Queries para Tablets */
 
 @media (min-width: 768px) {
