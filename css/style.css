@@ -367,14 +367,17 @@ footer {
   aspect-ratio: 1/1;
 }
 
-/* -------------------------------- */
-/* celulares */
+
+/* Media queries para celulares */
+
 @media all and (max-width: 767px) {
   .footersepardor {
     border-bottom: white solid 1px;
   }
 }
-/* tablets */
+
+/* Media queries para tablets */
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .footersepardor {
     border-right: white solid 1px;
@@ -410,7 +413,9 @@ footer {
     height: 200px;
   }
 }
-/* computadoras */
+
+/* Media queries para computadoras */
+
 @media all and (min-width: 993px) {
   .footersepardor {
     border-right: white solid 1px;
@@ -426,7 +431,6 @@ footer {
     height: 400px;
   }
   /* banner principal */
-
   .containerPrincipal {
     height: 600px;
   }
@@ -452,9 +456,8 @@ footer {
   .contenedorVideoDetalleCategoria {
     height: 400px;
   }
-
+  /* error404 */
   .error404-img {
     height: 600px;
   }
 }
-/* -------------------------------- */
